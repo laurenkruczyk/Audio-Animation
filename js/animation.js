@@ -1,0 +1,12 @@
+$(function(){
+  $('#play').click(function(){
+    document.getElementById('audio').play();
+    $('body').addClass('running');
+    $('div').each(function(){
+      console.log('hello');
+      $(this).addClass('running');
+    });
+    $('.animation').removeClass('hidden');
+    $('#play').hide();
+  })
+})
